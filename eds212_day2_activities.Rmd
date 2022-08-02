@@ -11,3 +11,34 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
+```{r}
+f_x <- expression(x ^ 2)
+
+my_derivative <- deriv(f_x,"x")
+
+x <- 3
+
+eval(my_derivative)
+```
+
+```{r}
+p_a <- expression(2*((3 * a + 2) ^2) -5)
+
+my_deriv2 <- deriv(p_a, "a")
+
+a <- 1.2
+
+eval(my_deriv2)
+
+```
+
+```{r}
+g_a <- expression((-4*t)/(t ^2 + 1)^3)
+
+my_deriv3 <- deriv(g_a, "t")
+
+t <- 0
+
+eval(my_deriv3)
+```
+
