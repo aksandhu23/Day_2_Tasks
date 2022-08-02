@@ -1,0 +1,13 @@
+---
+title: "Day 2 Tasks"
+author: "Amritpal Sandhu"
+date: "2022-08-02"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(palmerpenguins)
+```
+
