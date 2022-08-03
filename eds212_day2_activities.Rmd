@@ -42,3 +42,10 @@ t <- 0
 eval(my_deriv3)
 ```
 
+```{r}
+ggplot(data = penguins, aes(x = species, y = flipper_length_mm)) +
+  geom_jitter(aes(color = species)) +
+  labs(x = "Species", 
+       y = "Flipper Length") +
+  ggtitle("Species vs. Flipper Length") + guides(color = guide_legend(title = "Species Type"))
+```
